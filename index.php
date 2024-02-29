@@ -2,6 +2,8 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$game = new \Classes\GameProcessor();
+$jsonFilePath = 'vehicles.json';
+
+$game = new \Classes\GameProcessor($jsonFilePath);
 
 $game->start();
